@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tektur', sans-serif;
+}
+body{
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 75vh;
+    background: #0e9489;
+}
+/*. referce to whole class while # refers to one element*/
+.wrapper{
+    width: 500px;
+    background: white;
+    border-radius: 35px;
+    padding: 55px 60px 50px ;  
+    cursor: default; 
+}
+header h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+header p{
+    font-size: 18px;
+    margin-top: 12px;
+}
+form{
+    margin: 20px 0 20px;
+}
+form input{
+    font-size: 17px;
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0 17px;
+}
+form button{
+    opacity: 0.5;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #0e9489;
+    color: white;
+    font-size: 17px;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    pointer-events: none;
+}
+form input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+
+}
